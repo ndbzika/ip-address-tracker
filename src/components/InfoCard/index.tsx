@@ -1,26 +1,27 @@
+import { IpInfo } from "../../models/IpInfo"
 import { Container, Divider, Item } from "./style"
 
-export const InfoCard = () => {
+export const InfoCard = ({query = '0.0.0.0', city = 'City', region = 'Region', postal = 'Postal', timezone = 'UTC', isp = 'ISP'}: IpInfo) => {
     return (
         <Container>
             <Item>
                 <p>IP ADDRESS</p>
-                <span>38.0.101.76</span>
+                <span>{query}</span>
             </Item>
             <Divider/>
             <Item>
                 <p>LOCATION</p>
-                <span>Brooklyn, NY 10001</span>
+                <span>{city}, {region} {postal}</span>
             </Item>
             <Divider/>
             <Item>
                 <p>TIMEZONE</p>
-                <span>UTC -05:00</span>
+                <span>{timezone}</span>
             </Item>
             <Divider/>
             <Item>
                 <p>ISP</p>
-                <span>SpaceX Starlink</span>
+                <span>{isp}</span>
             </Item>
         </Container>
     )
