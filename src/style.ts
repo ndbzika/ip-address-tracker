@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import '@fontsource/rubik'
 
 export const Container = styled.div`
     width: 100%;
@@ -6,6 +7,8 @@ export const Container = styled.div`
     background: url("https://efim-frontendmentor-ip-tracker.pages.dev/images/pattern-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 40%;
+
+    font-family: 'Rubik', sans-serif;
 
     display: flex;
     flex-direction: column;
