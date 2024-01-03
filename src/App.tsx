@@ -1,5 +1,6 @@
 import {FaChevronRight} from 'react-icons/fa'
 import { Container, InputContainer } from './style'
+import { InfoCard } from './components/InfoCard'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <button><FaChevronRight style={{color: '#fff', width: '1rem', height: '1rem', textAlign: 'center'}}/></button>
       </InputContainer>
 
-      {/* component de dados de ip */}
+      <InfoCard/>
 
       {/* mapa */}
     </Container>

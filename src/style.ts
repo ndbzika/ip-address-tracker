@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: 100vh;
     background: url("https://efim-frontendmentor-ip-tracker.pages.dev/images/pattern-bg-desktop.png");
     background-repeat: no-repeat;
-    background-size: 100% 50%;
+    background-size: 100% 40%;
 
     display: flex;
     flex-direction: column;
