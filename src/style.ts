@@ -2,11 +2,18 @@ import styled from "styled-components";
 import '@fontsource/rubik'
 
 export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+`;
+
+
+export const SearchContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     background: url("https://efim-frontendmentor-ip-tracker.pages.dev/images/pattern-bg-desktop.png");
     background-repeat: no-repeat;
-    background-size: 100% 40%;
+    background-size: 100% 100%;
 
     font-family: 'Rubik', sans-serif;
 

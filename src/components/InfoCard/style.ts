@@ -6,6 +6,7 @@ export const Container = styled.div`
 
     position: absolute;
     top: 30%;
+    z-index: 999;
 
     background-color: #ffffff;
     border-radius: 1rem;
