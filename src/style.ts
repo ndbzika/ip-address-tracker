@@ -25,6 +25,12 @@ export const SearchContainer = styled.div`
         color: #ffffff;
         margin: 2rem 0;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        margin: 1rem 0;
+      }
+    }
 `;
 
 export const InputContainer = styled.div`
@@ -51,5 +57,30 @@ export const InputContainer = styled.div`
         height: 3.5rem;
         border-radius: 0 1rem 1rem 0;
         background-color: #000000;
+    }
+
+    @media (max-width: 600px) {
+      input {
+        width: 20rem;
+        height: 3.5rem;
+        padding: 1.1rem;
+        border-radius: 15px 0 0 15px;
+      }
+
+      button {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      input {
+        width: 80%;
+      }
+
+      button {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
     }
 `;

@@ -9,13 +9,13 @@ export const Map = ({lat = 0, lon = 0}: IpGeoLocation) => {
   const [map, setMap] = useState<any>(null)
   useEffect(() => {
     if (map) {
-      map.flyTo([lat, lon], 13)
+      map.flyTo([lat+0.01, lon], 13)
     }
   }, [lat, lon, map])
   return (
     <MapContainer
       center={[lat, lon]}
-      zoom={13}
+      zoom={10}
       scrollWheelZoom={false}
       style={{ width: '100%', height: '60vh' }}
       ref={setMap}
