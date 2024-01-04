@@ -1,10 +1,17 @@
 import { MapContainer, Marker, TileLayer } from "react-leaflet"
 import { IpGeoLocation } from "../../models/IpInfo";
+import { useEffect, useState } from "react";
+import marker from '../../../public/pin_marker.png'
+import { Icon } from "leaflet";
 
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useState } from "react";
 
 export const Map = ({lat = 0, lon = 0}: IpGeoLocation) => {
+  const customIcon = new Icon({
+    iconUrl:marker,
+    iconSize: [80, 80],
+
+  })
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [map, setMap] = useState<any>(null)
   useEffect(() => {
@@ -24,7 +31,7 @@ export const Map = ({lat = 0, lon = 0}: IpGeoLocation) => {
         attribution="Google Maps"
         url="https://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}"
       />
-      <Marker position={[lat, lon]}/>
+      <Marker position={[lat, lon]} icon={customIcon}/>
     </MapContainer>
   )
 }
